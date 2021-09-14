@@ -119,6 +119,7 @@ function revStyle () {
 function buildcopy () {
 	return src([
 		'app/**/*.html',
+		'!app/libs/**/*.html',
 		'app/fonts/**/*',
 		'app/*.htaccess',
 		'app/*.php',

@@ -1,0 +1,86 @@
+.care {
+
+    &__visuale {
+        @extend .margin-top-bottom;
+
+        .container {
+            max-width: 702px;
+        }
+    }
+
+    &__items {
+        @extend .margin-top-bottom;
+    }
+
+    &__item {
+        display: flex;
+        gap: 60px;
+        border-top: 1px solid #edeff3;
+        border-bottom: 1px solid #edeff3;
+        margin-top: -1px;
+        padding: 24px 0;
+
+        @media only screen and (max-width: 1200px) {
+            gap: 30px;
+        }
+
+        @media only screen and (max-width: 650px) {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        h4 {
+            @include fontSize(24px);
+            flex: 0 1 300px;  
+            line-height: 2.5rem;
+            
+            @media only screen and (max-width: 992px) {
+                flex: 0 1 30%;  
+            }
+
+            @media only screen and (max-width: 650px) {
+                flex: 1 1 100%;  
+            }
+        }
+
+        p {
+            color: $primary-color;
+            line-height: 2.19rem;
+            flex: 0 1 calc(100% - 300px - 95px);
+            letter-spacing: 0.35px;
+
+            @media only screen and (max-width: 1200px) {
+                flex: 0 1 calc(100% - 300px - 60px);
+            }
+
+            @media only screen and (max-width: 992px) {
+                flex: 0 1 70%;
+            }   
+
+            @media only screen and (max-width: 650px) {
+                flex: 1 1 100%;  
+            }
+        }
+    }
+
+    .title-gentle {
+        color: $fourth-color;
+    }
+    .title-empathetic {
+        color: $fifth-color;
+    }
+    .title-non-rushed {
+        color: $third-color;
+    }
+    .title-ethical {
+        color: $sixth-color;
+    }
+
+    &__descr_slogan {
+        @include fontSize(35px);
+        font-family: $decorate-font;
+        font-weight: 700;
+        text-align: center;
+    }
+
+}
