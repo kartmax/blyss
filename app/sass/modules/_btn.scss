@@ -3,3 +3,12 @@
   height: 100px;
 
 }
+
+.primary-btn-not-arrow {
+  &::after {
+    display: none !important;
+  }
+
+  cursor: pointer;
+  transition: 0.2s;
+}

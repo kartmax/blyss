@@ -1,6 +1,7 @@
 // ===================================================
 // =============== section about-descr ===============
 // ===================================================
+
 .about-descr {
     h1, h2, .sub-title {
         font-weight: 700;
@@ -33,17 +34,6 @@
         color: $primary-light-color;
         line-height: 2.25rem;
         letter-spacing: -0.1px;
-    }
-    
-
-    &__top {
-        @extend .margin-top-bottom;
-        font-family: $decorate-font;
-        text-align: center;
-
-        .container {
-            max-width: 935px;
-        }
     }
 
     &__bottom {
