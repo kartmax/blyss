@@ -1,0 +1,189 @@
+.pricing {
+
+    .head-descr-sect_top {
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    &__items-center {
+        @extend .pricing__items;
+
+        .container {
+            justify-content: center;
+        }
+
+        .pricing__item-table {
+            align-self: flex-start;
+        }
+    }
+    &__items-space-beetwen {
+        @extend .pricing__items;
+
+        .container {
+            justify-content: space-between;
+        }
+
+        .pricing__item-table {
+            align-self: flex-start;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+        padding: 25px 15px 25px 30px;
+        background-color: #fff;
+        box-shadow: $shadow;
+        border-radius: 15px;
+        flex: 1 1 calc(33.33% - 20px);
+
+        @media only screen and (max-width: 992px) {
+            flex: 1 1 calc(50% - 15px);
+        }
+
+        @media only screen and (max-width: 650px) {
+            flex: 1 1 100%;
+        }
+
+
+        h4 {
+            @include fontSize(18px);
+            color: $primary-color;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        p {
+            @include fontSize(16px);
+            color: $primary-light-color;
+            line-height: 1.88rem;
+            margin: 0;
+            padding-top: 4px;
+        }
+    }
+
+    &__item-table {
+        @extend .pricing__item;
+        border-radius: 0;
+        padding: 0;
+        flex: 0 1 550px;
+        text-align: center;
+
+        p {
+            @include fontSize(16px);
+            color: $primary-color;
+            line-height: 1.5rem;
+            padding-top: 0;
+        }
+
+        .pricing__item-table_head,
+        .pricing__item-table_row {
+            display: flex;
+            margin-top: -1px;
+        }
+        .head_column,
+        .row-title {
+            flex: 0 1 70%;
+            text-align: left;
+
+            @media only screen and (max-width: 992px) {
+                flex: 0 1 60%;
+            }
+        }
+        .head_column,
+        .head_value {
+            line-height: 1.5rem;
+            padding: 13px 15px 13px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .row-title {
+            padding: 10px 25px;
+        }
+        .row-value {
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .head_value,
+        .row-value {
+            flex: 0 1 30%;
+            margin-left: -1px;
+
+            @media only screen and (max-width: 992px) {
+                flex: 0 1 40%;
+            }
+        }
+        .head_column,
+        .row-title,
+        .head_value,
+        .row-value {
+            border: 1px solid $border-color;
+
+            @media only screen and (max-width: 768px) {
+                padding: 10px 15px;
+            }
+        }
+
+
+        &_head {
+            font-weight: 700;
+        }
+
+        .head_column {
+            @include fontSize(24px);
+            line-height: 2.1rem;
+            font-family: $decorate-font;
+            color: $dot-active-color;
+
+            @media only screen and (max-width: 768px) {
+              font-size: 16px;
+            }
+        }
+
+        .head_value {
+            @include fontSize(18px);
+
+            @media only screen and (max-width: 768px) {
+                font-size: 14px;
+              }
+
+            span {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.2rem;
+                padding-top: 2px;
+            }
+        }
+    }
+
+    &__item_bg {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        bottom: -130px;
+        width: 100%;
+        height: 270px;
+        background-color: #f1faf8;;
+    }
+    &__item_bg-last {
+        @extend .pricing__item_bg;
+        height: 400px;
+        bottom: -260px;
+    }
+}
