@@ -69,12 +69,14 @@ $(function() {
 
 
     //js for show success block
-    var $button = $('#send-btn'),
-        $containerForm = $('.modal-form-content'),
-        $containerSuccess = $('.modal-success-content');
-    $button.click('on', function() {
-        $containerForm.addClass('d-none');
-        $containerSuccess.removeClass('d-none');
+    let $btn = $('.send-btn');
+    $btn.on('click', function() {
+        let thisForm = $(this).parents('.modal-form-content'),
+            thisModal = $(this).parents('.modal'),
+            thisContainerSuccess = thisModal.find('.modal-success-content');
+
+        thisForm.addClass('d-none');
+        thisContainerSuccess.removeClass('d-none');
     })
 
 

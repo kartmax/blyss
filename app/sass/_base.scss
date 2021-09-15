@@ -21,6 +21,11 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+.medium-text {
+    font-weight: 500;
+    color: $primary-color;
+}
+
 .margin-top-bottom {
 	margin-top: $size-desctop;
 	margin-bottom: $size-desctop;

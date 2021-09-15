@@ -1,9 +1,10 @@
 
-.primary-btn-not-arrow {
+.primary-btn.primary-btn-not-arrow {
   &::after {
     display: none !important;
   }
 
+  text-align: center;
   cursor: pointer;
   transition: 0.2s;
 }
