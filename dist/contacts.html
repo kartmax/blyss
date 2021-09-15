@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Blyss - Difference</title>
+	<title>Blyss - Contacts</title>
 	<meta name="description" content="Blyss">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="contacts__wrap">
+            <div itemscope itemtype="https://schema.org/Pharmacy" class="contacts__wrap">
                 <div class="container">
                     <div class="contacts__wrap_left">
                         <div class="map" id="map"></div>
@@ -106,8 +106,8 @@
                                 </div>
                                 <div class="contacts__item_text">
                                     <h4>Hours</h4>
-                                    <p><span>Weekdays:</span> 8am to 8pm</p>
-                                    <p><span>Weekend:</span> 6am to 9pm</p>
+                                    <p itemprop="openingHours" content="Mo,Tu,We,Th,Fr 08:00-20:00"><span>Weekdays:</span> 8am to 8pm</p>
+                                    <p itemprop="openingHours" content="Sa, Su 06:00-21:00"><span>Weekend:</span> 6am to 9pm</p>
                                 </div>
                             </div>
                             <div class="contacts__item">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                         <a href="#" class="primary-btn primary-btn-not-arrow" data-toggle="modal" data-target="#modalBookAnAppointment_2">Contact US</a>
-                        <p class="contacts__phone"><span class="medium-text">Phone:</span>  <a href="tel:858-799-0570">858-799-0570</a></p>
+                        <p class="contacts__phone"><span class="medium-text">Phone:</span>  <a itemprop="telephone" content="858-799-0570" href="tel:858-799-0570">858-799-0570</a></p>
                     </div>
                 </div>
             </div>
