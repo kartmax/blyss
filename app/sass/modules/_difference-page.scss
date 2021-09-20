@@ -36,20 +36,20 @@
         h3 {
             @include fontSize(35px);
             margin-bottom: 1rem;
-            line-height: 2.5rem;
+            line-height: calculateRem(40px);
         }
 
         .sub-title {
             @include fontSize(22px);
             color: $secondary-color;
             font-weight: 700;
-            margin-bottom: 0.69rem;
+            margin-bottom: calculateRem(11px);
         }
 
         p {
-            @include fontSize(16px);
+            @include fontSize(17px);
             color: $primary-light-color;
-            line-height: 2.19rem;
+            line-height: calculateRem(35px);
             letter-spacing: -0.1px;
             margin-bottom: 0px;
         }

@@ -32,7 +32,7 @@
         h4 {
             @include fontSize(24px);
             flex: 0 1 300px;  
-            line-height: 2.5rem;
+            line-height: calculateRem(40px);
             
             @media only screen and (max-width: 992px) {
                 flex: 0 1 30%;  
@@ -45,9 +45,10 @@
 
         p {
             color: $primary-color;
-            line-height: 2.19rem;
+            line-height: calculateRem(35px);
             flex: 0 1 calc(100% - 300px - 95px);
             letter-spacing: 0.35px;
+            font-size: 1rem;
 
             @media only screen and (max-width: 1200px) {
                 flex: 0 1 calc(100% - 300px - 60px);

@@ -4,7 +4,8 @@
 //Mixin to calculate REM
 @function calculateRem($size) {
   // $remSize: $size / 16px;
-  $remSize: math.div($size, 16px);
+  // $remSize: math.div($size, 17px);
+  $remSize: math.div($size, $base-size-font-desctop);
   @return #{$remSize}rem;
 }
 

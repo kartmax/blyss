@@ -8,7 +8,7 @@
     }
 
     h1 {
-        margin-bottom: 1.57rem;
+        margin-bottom: calculateRem(25px);
     }
 
     h2 {
@@ -18,22 +18,27 @@
     .sub-title {
         @include fontSize(24px);
         font-family: $decorate-font;
-        line-height: 2.5rem;
+        line-height: calculateRem(40px);
         color: $secondary-color;
         margin-bottom: 0;
         letter-spacing: normal;
 
         &-last {
-            margin-bottom: 1.25rem;
+            margin-bottom: calculateRem(20px);
         }
     }
 
     p {
-        @include fontSize(16px);
+        @include fontSize(17px);
         font-family: $default-font;
         color: $primary-light-color;
-        line-height: 2.25rem;
+        line-height: calculateRem(36px);
         letter-spacing: -0.1px;
+
+        span {
+            font-weight: 500;
+            color: $primary-color;
+        }
     }
 
     &__bottom {
@@ -65,8 +70,9 @@
         flex: 0 1 470px;
         height: 553px;
         box-shadow: 1.5px 2.6px 10px 0 rgba(184, 216, 221, 0.3);
-        background-color: #fff;
+        background-color: #fafafa;
         border-radius: 15px;
+        overflow: hidden;
 
         @media only screen and (max-width: 850px) {
             flex-wrap: wrap;
@@ -86,7 +92,6 @@
         }
 
         img {
-            border-radius: 15px;
             max-width: 100%;
 
             @media only screen and (max-width: 720px) {
@@ -136,7 +141,7 @@
         }
 
         p {
-            margin-bottom: 3px;
+            margin-bottom: 10px;
         }
     }
 

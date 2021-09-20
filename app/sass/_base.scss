@@ -3,7 +3,7 @@ html {
 	font-size: 14px;
 
 	@media only screen and (min-width : 769px){
-		font-size: 16px;
+		font-size: $base-size-font-desctop;
 	}
 }
 
@@ -52,38 +52,38 @@ body {
         font-weight: 700;
     }
     h1 {
-        margin-bottom: 1.57rem;
+        margin-bottom: calculateRem(25px);
     }
     .sub-title {
         @include fontSize(24px);
         font-family: $decorate-font;
-        line-height: 2.5rem;
+        line-height: calculateRem(40px);
         color: $secondary-color;
         margin-bottom: 0;
         letter-spacing: normal;
 
         &-last {
-            margin-bottom: 1.25rem;
+            margin-bottom: calculateRem(20px);
         }
     }
     p {
         @include fontSize(16px);
         font-family: $default-font;
         color: $primary-light-color;
-        line-height: 2.25rem;
+        line-height: calculateRem(36px);
         letter-spacing: -0.1px;
     }  
 }
 .sub-title {
     @include fontSize(24px);
     font-family: $decorate-font;
-    line-height: 2.5rem;
+    line-height: calculateRem(40px);
     color: $secondary-color;
     margin-bottom: 0;
     letter-spacing: normal;
 
     &-last {
-        margin-bottom: 1.25rem;
+        margin-bottom: calculateRem(20px);
     }
 }
 
